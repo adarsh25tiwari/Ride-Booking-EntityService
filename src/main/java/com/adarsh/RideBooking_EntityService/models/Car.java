@@ -27,7 +27,7 @@ public class Car extends BaseModel {
     @Column(nullable = false)
     private String companyName;
 
-    @Column(nullable = false)
+    @OneToOne
     private Color color;
 
     @OneToOne

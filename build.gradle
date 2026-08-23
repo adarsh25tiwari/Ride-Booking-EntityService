@@ -6,7 +6,7 @@ plugins {
 }
 
 group = 'com.adarsh'
-version = '0.0.3-SNAPSHOT'
+version = '0.0.7-SNAPSHOT'
 
 java {
 	toolchain {
@@ -49,11 +49,12 @@ dependencies {
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
 
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	implementation 'com.fasterxml.jackson.core:jackson-annotations'
 
 	// Flyway Core & MySQL Extension
-	implementation 'org.flywaydb:flyway-core:10.15.0'
+	/*implementation 'org.flywaydb:flyway-core:10.15.0'
 	implementation 'org.flywaydb:flyway-mysql:10.15.0'
-	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'  */
 
 }
 tasks.named('test') {

@@ -31,4 +31,10 @@ public class Booking extends BaseModel {
 
     @Temporal(TemporalType.TIMESTAMP)
     private Date endTime;
+
+    @OneToOne(cascade = CascadeType.ALL)
+    private ExactLocation startLocation;
+
+    @OneToOne(cascade = CascadeType.ALL)
+    private ExactLocation endLocation;
 }
